@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<h2>Complex form with address component</h2>
+<form #myForm="ngForm">
+  <div>
+    <label>Firstname:</label>
+    <input type="text" name="firstName" ngModel>
+  </div>
+  <div>
+    <label>Lastname:</label>
+    <input type="text" name="lastName" ngModel>
+  </div>
+  <address></address>
+</form>
+<pre>{{ myForm.value | json }}</pre>
