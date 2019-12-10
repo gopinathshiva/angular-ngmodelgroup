@@ -23,7 +23,7 @@ import { ControlContainer, NgForm } from '@angular/forms';
 @Component({
   selector: 'address',
   template: `
-    <fieldset>
+    <fieldset [ngModelGroup]="false ? 'address' : null">
       <div>
         <label>Zip:</label>
         <input type="text" name="zip" ngModel>
